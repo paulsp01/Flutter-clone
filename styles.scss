@@ -1,3 +1,21 @@
+
+@font-face {
+    font-family: 'font';
+    src: url(./4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvQ.woff2);
+}
+
+@font-face {
+    font-family: 'font2';
+    src: url(./Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'font3';
+    src: url(./KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2);
+}
+
+
+
 *{
     margin:0;
     padding: 0;
@@ -26,6 +44,19 @@ section,nav{
   display: flex;
   flex-direction: column;
   gap: $gap;
+}
+
+@mixin btn-style($color: #0468D7,$background-color:white ) {
+      padding:0.8rem 2.5rem;
+                border: 1px solid #0468D7;
+                color:$color;
+                border-radius: 2rem;
+                width: fit-content;
+                font-family: font3;
+                font-weight: 600;
+                font-size: 1.1rem;
+                background-color:$background-color ;
+  
 }
 
 main{
@@ -111,6 +142,171 @@ main{
     }
 }
 
+.view3,.view4,.view5,.view6{
+    width: 100%;
+    @include flex-col(2rem);
+    align-items: center;
+    justify-content: center;
+    padding-top: 3.5rem;
+    .top{
+        width: 100%;
+        padding: 1.5rem;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .bottom{
+        width: 100%;
+        @include flex-col(2rem);
+        padding: 1.5rem;
+
+        h4{
+            font-size: 1.3rem;
+            opacity: 0.7;
+            font-weight: 700;
+            font-family: font2;
+        }
+
+        h3{
+            font-size: 3rem;
+            font-weight: 620;
+            font-family: font;
+        }
+
+        p{
+            font-size: 1.3rem;
+            opacity: 0.9;
+            font-family: font2;
+        }
+
+        .flex{
+            @include flex-col(0rem);
+            justify-content: flex-start;
+
+            button{
+              @include btn-style(#0468D7, white)
+                
+                
+            }
+
+            a{
+                
+                    font-weight: bold;
+                
+                padding: 2rem;
+            }
+        }
+    }
+}
+
+.view4,.view6{
+    background:linear-gradient(35deg, rgb(252, 252, 226) 40%, rgb(245, 251, 254) 90%);
+    
+    .flex{
+        #btn,#btn3{
+            @include btn-style( white,#0468D7)
+           
+        }
+    }
+}
+
+.view5{
+    .btn2{
+        @include btn-style();
+    }
+}
+
+.view7{
+    width: 100%;
+   
+    padding:5rem 1.5rem;
+    @include flex-col(0rem);
+    align-items: center;
+    justify-content: center;
+    .box{
+         position: relative;
+        height:550px;
+       display: flex;
+       flex-direction: row;
+       overflow: hidden;
+        background: rgb(13, 5, 69);
+        
+         border-radius: 3rem;
+       
+        
+       
+         border-radius: 3rem;
+        
+     
+       color: white;
+    
+        
+        border-radius: 3rem;
+       
+
+    
+        
+
+      .b{
+        z-index: 1;
+        width: 80%;
+         @include flex-col(1rem);
+        position: relative;
+        z-index: 3;
+         padding:5rem 3rem;
+      
+        justify-content: space-between;
+          h3{
+            font-size: 3rem;
+            font-family: font;
+            
+        }
+
+        p{
+            font-size: 1.2rem;
+        }
+
+        .flex{
+            @include flex-col(0rem);
+            margin-top: 1rem;
+            .btn7{
+                @include btn-style();
+               
+            }
+            a{
+                font-weight: bold;
+                padding: 1.5rem;
+            }
+        }
+      }
+     .im{
+        position: absolute;
+      width: 100%;
+       
+      top:-14%;
+      right: 50%;
+   
+     
+        
+     }
+     
+     
+      
+       
+     
+    
+
+    }
+
+    
+
+
+}
+
+
+
 }
 
 
@@ -148,7 +344,87 @@ main{
         flex-direction: row;
         justify-content: center;
         
-        gap: 1rem;
+        gap: 2rem;
+    }
+
+    .view3,.view4,.view5,.view6{
+       width: 100%;
+      
+    .main-div{
+        display: flex;
+        align-items: center;
+         flex-direction: row-reverse;
+       
+       gap: 8rem;
+        width: 80%;
+         .bottom{
+        
+
+        h3{
+            font-size: 4rem;
+        }
+        .flex{
+          
+           flex-direction: row;
+           align-items: center;
+           gap: 2rem;
+           a{
+            padding: 0;
+           }
+          
+        }
+     }
+    }
+    }
+
+    .view4,.view6{
+        .main-div{
+            display: flex;
+            flex-direction: row;
+            
+        }
+    }
+
+    .view7{
+        
+        .box{
+            width: 80%;
+             height:350px;
+             position: relative;
+
+           
+             .b{
+                .flex{
+                    flex-direction: row;
+                   align-items: center;
+                    gap: 1.5rem;
+
+
+                    a{
+                        padding: 0;
+                    }
+
+                    .btn7{
+                        padding: 0.6rem 2rem;
+                         
+                      font-size: 0.9rem;
+                         
+                    }
+                }
+
+            }
+
+            .im{
+        position: absolute;
+        width: 40%;
+       
+       left:50%;
+       top:-60%;
+     
+        
+     }
+           
+        }
     }
    }
 }

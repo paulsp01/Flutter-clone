@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "font";
+  src: url(./4UasrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RPjIUvQ.woff2);
+}
+@font-face {
+  font-family: "font2";
+  src: url(./Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "font3";
+  src: url(./KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2);
+}
 * {
   margin: 0;
   padding: 0;
@@ -101,6 +113,163 @@ main .view2 .card img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+main .view3, main .view4, main .view5, main .view6 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3.5rem;
+}
+main .view3 .top, main .view4 .top, main .view5 .top, main .view6 .top {
+  width: 100%;
+  padding: 1.5rem;
+}
+main .view3 .top img, main .view4 .top img, main .view5 .top img, main .view6 .top img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .view3 .bottom, main .view4 .bottom, main .view5 .bottom, main .view6 .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+main .view3 .bottom h4, main .view4 .bottom h4, main .view5 .bottom h4, main .view6 .bottom h4 {
+  font-size: 1.3rem;
+  opacity: 0.7;
+  font-weight: 700;
+  font-family: font2;
+}
+main .view3 .bottom h3, main .view4 .bottom h3, main .view5 .bottom h3, main .view6 .bottom h3 {
+  font-size: 3rem;
+  font-weight: 620;
+  font-family: font;
+}
+main .view3 .bottom p, main .view4 .bottom p, main .view5 .bottom p, main .view6 .bottom p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+  font-family: font2;
+}
+main .view3 .bottom .flex, main .view4 .bottom .flex, main .view5 .bottom .flex, main .view6 .bottom .flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: flex-start;
+}
+main .view3 .bottom .flex button, main .view4 .bottom .flex button, main .view5 .bottom .flex button, main .view6 .bottom .flex button {
+  padding: 0.8rem 2.5rem;
+  border: 1px solid #0468D7;
+  color: #0468D7;
+  border-radius: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: font3;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: white;
+}
+main .view3 .bottom .flex a, main .view4 .bottom .flex a, main .view5 .bottom .flex a, main .view6 .bottom .flex a {
+  font-weight: bold;
+  padding: 2rem;
+}
+main .view4, main .view6 {
+  background: linear-gradient(35deg, rgb(252, 252, 226) 40%, rgb(245, 251, 254) 90%);
+}
+main .view4 .flex #btn, main .view4 .flex #btn3, main .view6 .flex #btn, main .view6 .flex #btn3 {
+  padding: 0.8rem 2.5rem;
+  border: 1px solid #0468D7;
+  color: white;
+  border-radius: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: font3;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: #0468D7;
+}
+main .view5 .btn2 {
+  padding: 0.8rem 2.5rem;
+  border: 1px solid #0468D7;
+  color: #0468D7;
+  border-radius: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: font3;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: white;
+}
+main .view7 {
+  width: 100%;
+  padding: 5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+  justify-content: center;
+}
+main .view7 .box {
+  position: relative;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background: rgb(13, 5, 69);
+  border-radius: 3rem;
+  border-radius: 3rem;
+  color: white;
+  border-radius: 3rem;
+}
+main .view7 .box .b {
+  z-index: 1;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  z-index: 3;
+  padding: 5rem 3rem;
+  justify-content: space-between;
+}
+main .view7 .box .b h3 {
+  font-size: 3rem;
+  font-family: font;
+}
+main .view7 .box .b p {
+  font-size: 1.2rem;
+}
+main .view7 .box .b .flex {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  margin-top: 1rem;
+}
+main .view7 .box .b .flex .btn7 {
+  padding: 0.8rem 2.5rem;
+  border: 1px solid #0468D7;
+  color: #0468D7;
+  border-radius: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: font3;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background-color: white;
+}
+main .view7 .box .b .flex a {
+  font-weight: bold;
+  padding: 1.5rem;
+}
+main .view7 .box .im {
+  position: absolute;
+  width: 100%;
+  top: -14%;
+  right: 50%;
+}
 
 @media (min-width: 900px) {
   main {
@@ -129,6 +298,54 @@ main .view2 .card img {
     width: 80%;
     flex-direction: row;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
+  }
+  main .view3, main .view4, main .view5, main .view6 {
+    width: 100%;
+  }
+  main .view3 .main-div, main .view4 .main-div, main .view5 .main-div, main .view6 .main-div {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 8rem;
+    width: 80%;
+  }
+  main .view3 .main-div .bottom h3, main .view4 .main-div .bottom h3, main .view5 .main-div .bottom h3, main .view6 .main-div .bottom h3 {
+    font-size: 4rem;
+  }
+  main .view3 .main-div .bottom .flex, main .view4 .main-div .bottom .flex, main .view5 .main-div .bottom .flex, main .view6 .main-div .bottom .flex {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+  main .view3 .main-div .bottom .flex a, main .view4 .main-div .bottom .flex a, main .view5 .main-div .bottom .flex a, main .view6 .main-div .bottom .flex a {
+    padding: 0;
+  }
+  main .view4 .main-div, main .view6 .main-div {
+    display: flex;
+    flex-direction: row;
+  }
+  main .view7 .box {
+    width: 80%;
+    height: 350px;
+    position: relative;
+  }
+  main .view7 .box .b .flex {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  main .view7 .box .b .flex a {
+    padding: 0;
+  }
+  main .view7 .box .b .flex .btn7 {
+    padding: 0.6rem 2rem;
+    font-size: 0.9rem;
+  }
+  main .view7 .box .im {
+    position: absolute;
+    width: 40%;
+    left: 50%;
+    top: -60%;
   }
 }/*# sourceMappingURL=styles.css.map */
