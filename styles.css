@@ -38,15 +38,46 @@ main {
   align-items: center;
 }
 main #navo {
+  position: fixed;
   width: 100%;
+}
+main #navo .para {
   background: linear-gradient(124.64deg, #027dfd, #833ef2);
   padding: 1rem 0.7rem;
 }
-main #navo p {
+main #navo .para p {
   color: white;
   text-align: center;
   font-weight: 650;
   font-size: 0.9rem;
+}
+main #navo .div1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 2rem 3rem;
+}
+main #navo .div1 .div2 ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  font-weight: 700;
+  opacity: 0.8;
+}
+main #navo .div1 .div2 ul li button {
+  padding: 0.8rem 1.5rem;
+  background-color: #0468D7;
+  color: white;
+  border-radius: 2.5rem;
+  border: none;
+}
+main #navo .div1 .div2 ul li:hover {
+  color: #046cdc;
+  cursor: pointer;
 }
 main .view1 {
   width: 100%;
@@ -57,6 +88,7 @@ main .view1 {
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
+  padding-top: 15rem;
 }
 main .view1 .box1 {
   width: 100%;
@@ -270,7 +302,83 @@ main .view7 .box .im {
   top: -14%;
   right: 50%;
 }
+main footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: flex-start;
+  align-items: start;
+}
+main footer #main-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: flex-start;
+  align-items: start;
+}
+main footer #main-div img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0 3rem;
+}
+main footer #main-div .box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 5rem;
+}
+main footer #main-div .box ul li {
+  list-style: none;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+main footer #main-div .box ul .head {
+  font-weight: bold;
+}
+main footer .icon {
+  width: 100%;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0 2.5rem 0;
+}
+main footer .icon i {
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+main footer .para {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgb(155, 155, 155);
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+main footer .para p {
+  width: 70%;
+  text-align: center;
+}
+main footer .para .term {
+  display: flex;
+  gap: 1rem;
+}
+main footer .para .term a {
+  text-decoration: none;
+}
 
+@media (max-width: 780px) {
+  main #navo .div1 .div2 {
+    display: none;
+  }
+}
 @media (min-width: 900px) {
   main {
     width: 100%;
@@ -288,8 +396,9 @@ main .view7 .box .im {
     width: 50%;
   }
   main .view1 .box1 h1 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     text-align: left;
+    font-weight: 650;
   }
   main .view1 .box2 {
     width: 69%;
@@ -347,5 +456,33 @@ main .view7 .box .im {
     width: 40%;
     left: 50%;
     top: -60%;
+  }
+  main footer #main-div {
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    padding: 3rem 5rem;
+  }
+  main footer #main-div .logo img {
+    padding: 0;
+    margin-top: 2rem;
+  }
+  main footer #main-div .box {
+    flex-direction: row;
+    gap: 9rem;
+  }
+  main footer .icon {
+    justify-content: flex-start;
+    padding-left: 5rem;
+  }
+  main footer .para {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding: 2rem 5rem 4rem 5rem;
+  }
+  main footer .para p {
+    width: 80%;
+    text-align: left;
   }
 }/*# sourceMappingURL=styles.css.map */
